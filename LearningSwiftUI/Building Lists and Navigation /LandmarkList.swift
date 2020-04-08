@@ -7,25 +7,39 @@
 
 import SwiftUI
 
+struct AnotherView: View {
+
+    var body: some View {
+        Text("Aqui é outra View")
+    }
+
+}
+
 struct LandmarkList: View {
     @State var landmarkData: [String] = ["Teste1", "Teste2", "Teste3", "Teste4", "Teste5", "Teste6"]
 
     var body: some View {
 
-        // Utiliza a lista de dados e difere os itens pelo id
-        VStack {
-            List(landmarkData, id: \.description) { landMark in
-                LandmarkRow(name: landMark)
-            }
-            Spacer()
-            Button(action: {
-                for newValue in 0..<self.landmarkData.count {
-                    self.landmarkData[newValue] = "Teste\(newValue*2)"
+        NavigationView {
+            // Utiliza a lista de dados e difere os itens pelo id
+            VStack {
+                List(landmarkData, id: \.description) { landMark in
+                    NavigationLink(destination: AnotherView()) {
+                        LandmarkRow(name: landMark)
+                    }
                 }
-            }) {
-                Text("Modify Data")
+                    .navigationBarTitle(Text("Landmarks"))
+                Spacer()
+                Button(action: {
+                    for newValue in 0..<self.landmarkData.count {
+                        self.landmarkData[newValue] = "Teste\(newValue*2)"
+                    }
+                }) {
+                    Text("Modify Data")
+                }
             }
         }
+
     }
 }
 
