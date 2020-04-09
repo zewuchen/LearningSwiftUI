@@ -29,6 +29,7 @@ struct MapView: UIViewRepresentable {
 struct CircleImage: View {
     var body: some View {
         // Resizable preenche o frame definido
+//        Image(systemName: "star.fill").resizable()
         Image("naruto").resizable()
             .frame(width: 250, height: 220, alignment: .center)
             .clipShape(Circle())
