@@ -15,6 +15,10 @@
 		CB5D5867243E32C800D065D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5D5865243E32C800D065D9 /* LaunchScreen.storyboard */; };
 		CB95FC5224927E5700C97F82 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95FC5124927E5700C97F82 /* LoginView.swift */; };
 		CB95FC5524927E8800C97F82 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95FC5424927E8800C97F82 /* Extension.swift */; };
+		CB95FC5C249283D600C97F82 /* WordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95FC58249283D600C97F82 /* WordController.swift */; };
+		CB95FC5D249283D600C97F82 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95FC59249283D600C97F82 /* WordModel.swift */; };
+		CB95FC5E249283D600C97F82 /* WordGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95FC5A249283D600C97F82 /* WordGraphView.swift */; };
+		CB95FC5F249283D600C97F82 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95FC5B249283D600C97F82 /* WordView.swift */; };
 		CBAB6924243E5933009D3E7F /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB6923243E5933009D3E7F /* LandmarkRow.swift */; };
 		CBBBE82A243E600700E75B51 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBBE829243E600700E75B51 /* LandmarkList.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +34,10 @@
 		CB5D5868243E32C800D065D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB95FC5124927E5700C97F82 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CB95FC5424927E8800C97F82 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CB95FC58249283D600C97F82 /* WordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordController.swift; sourceTree = "<group>"; };
+		CB95FC59249283D600C97F82 /* WordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		CB95FC5A249283D600C97F82 /* WordGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordGraphView.swift; sourceTree = "<group>"; };
+		CB95FC5B249283D600C97F82 /* WordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		CBAB6923243E5933009D3E7F /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		CBBBE829243E600700E75B51 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +77,7 @@
 				CBAB6922243E4F07009D3E7F /* Building Lists and Navigation  */,
 				CB95FC5324927E7A00C97F82 /* Extensions */,
 				CB95FC5024927E2F00C97F82 /* Login Exercise */,
+				CB95FC57249283C600C97F82 /* WordGraph */,
 				CB5D5860243E32C800D065D9 /* Assets.xcassets */,
 				CB5D5865243E32C800D065D9 /* LaunchScreen.storyboard */,
 				CB5D5868243E32C800D065D9 /* Info.plist */,
@@ -99,6 +108,17 @@
 				CB95FC5424927E8800C97F82 /* Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB95FC57249283C600C97F82 /* WordGraph */ = {
+			isa = PBXGroup;
+			children = (
+				CB95FC5A249283D600C97F82 /* WordGraphView.swift */,
+				CB95FC5B249283D600C97F82 /* WordView.swift */,
+				CB95FC58249283D600C97F82 /* WordController.swift */,
+				CB95FC59249283D600C97F82 /* WordModel.swift */,
+			);
+			path = WordGraph;
 			sourceTree = "<group>";
 		};
 		CBAB6920243E4E8E009D3E7F /* Creating and Combining Views */ = {
@@ -198,12 +218,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5D585B243E32C600D065D9 /* AppDelegate.swift in Sources */,
+				CB95FC5D249283D600C97F82 /* WordModel.swift in Sources */,
 				CB5D585D243E32C600D065D9 /* SceneDelegate.swift in Sources */,
 				CB95FC5524927E8800C97F82 /* Extension.swift in Sources */,
 				CB95FC5224927E5700C97F82 /* LoginView.swift in Sources */,
 				CBAB6924243E5933009D3E7F /* LandmarkRow.swift in Sources */,
 				CB5D585F243E32C600D065D9 /* ContentView.swift in Sources */,
 				CBBBE82A243E600700E75B51 /* LandmarkList.swift in Sources */,
+				CB95FC5C249283D600C97F82 /* WordController.swift in Sources */,
+				CB95FC5F249283D600C97F82 /* WordView.swift in Sources */,
+				CB95FC5E249283D600C97F82 /* WordGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
